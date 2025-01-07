@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function fetchM3U() {
         loadingSpinner.style.display = 'block';
         
-        fetch('https://vargatv.netlify.app/in.m3u')  //check it again for error
+        fetch('in.m3u')  //check it again for error
             .then(response => response.text())
             .then(data => {
                 const m3uChannels = parseM3U(data);
